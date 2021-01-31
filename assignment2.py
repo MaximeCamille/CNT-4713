@@ -24,6 +24,8 @@ class Assignment2:
         for i in range(0, len(input)):
             if i % 2 == 0:
                 newList.append(input[i])
+        
+        return newList
 
     def modifyString(self, name):
         newString = ""
@@ -80,4 +82,4 @@ class Assignment2:
 obj = Assignment2(24)
 
 obj.sayWelcome("Max")
-obj.doubleList(["foo", "bar"])
+print(obj.doubleList(["00", "11", "22", "33", "44", "55", "66", "77", "88", "99"]))
