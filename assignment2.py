@@ -79,13 +79,3 @@ class Assignment2:
         except socket.error as err:
             print("Socket error, connection faild: %s" % err)
             return False
-
-# -----------------------------------------------------------------------------------
-
-obj = Assignment2(24)
-
-obj.sayWelcome("Max")
-print(obj.doubleList(["00", "11", "22", "33", "44", "55", "66", "77", "88", "99"]))
-print(obj.modifyString("abcdefghijklmnopqrstuvwxyz"))
-
-print(obj.isGoodPassword("pgrjgjr&8hr31G"))
