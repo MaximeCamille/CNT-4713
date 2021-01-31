@@ -30,7 +30,7 @@ class Assignment2:
     def modifyString(self, name):
         newString = ""
 
-        for i in range(1, len(name)):
+        for i in range(1, len(name) + 1):
             if i % 3 == 0:
                 newString += name[i - 1].upper()
             elif (i % 4 == 0) and (i % 3 != 0):
@@ -83,3 +83,4 @@ obj = Assignment2(24)
 
 obj.sayWelcome("Max")
 print(obj.doubleList(["00", "11", "22", "33", "44", "55", "66", "77", "88", "99"]))
+print(obj.modifyString("abcdefghijklmnopqrstuvwxyz"))
