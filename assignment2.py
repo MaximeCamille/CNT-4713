@@ -17,13 +17,13 @@ class Assignment2:
             newList.append(input[i] + input[i])
 
         # Second Half
-        for i in range(0, len(input)):
+        for i in range(1, len(input) + 1):
             if i % 2 != 0:
-                newList.append(input[i])
+                newList.append(input[i - 1])
 
-        for i in range(0, len(input)):
+        for i in range(1, len(input) + 1):
             if i % 2 == 0:
-                newList.append(input[i])
+                newList.append(input[i - 1])
         
         return newList
 
