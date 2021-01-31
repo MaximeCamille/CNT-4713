@@ -6,22 +6,22 @@ class Assignment2:
         self.age = age
 
     def sayWelcome(self, name):
-        print("Welcome to the assignment, " + name + "!  Haven't seen you for " + self.age + " years!")
+        print("Welcome to the assignment, " + name + "!  Haven't seen you for " + str(self.age) + " years!")
 
     def doubleList(self, input):
         # Create new list
         newList = []
 
         # First Half
-        for i in range(0, len(newList)):
+        for i in range(0, len(input)):
             newList.append(input[i] + input[i])
 
         # Second Half
-        for i in range(0, len(newList)):
+        for i in range(0, len(input)):
             if i % 2 != 0:
                 newList.append(input[i])
 
-        for i in range(0, len(newList)):
+        for i in range(0, len(input)):
             if i % 2 == 0:
                 newList.append(input[i])
 
@@ -74,3 +74,10 @@ class Assignment2:
         except socket.error as err:
             print("Socket error, connection faild: %s" % err)
             return False
+
+# -----------------------------------------------------------------------------------
+
+obj = Assignment2(24)
+
+obj.sayWelcome("Max")
+obj.doubleList(["foo", "bar"])
